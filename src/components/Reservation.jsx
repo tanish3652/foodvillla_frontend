@@ -23,7 +23,7 @@ const handleReservation = async (e) =>{
     e.preventDefault();
     try{
         const {data} = await axios.post(
-            "http://localhost:4000/api/reservation/send",
+            "https://foodvilla-backend-dusky.vercel.app/api/reservation/send",
             {firstName, lastName,email,phone,date,time},
             {
                 headers:{
